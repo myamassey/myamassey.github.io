@@ -1,0 +1,179 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+
+* { 
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+    /* font-family : "Poppins", sans-serif; */
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+  }
+  body {
+    display : flex;
+    align-items : center;
+    justify-content : center;  
+    /* background-color: #43345d; */
+    min-height : 800px;
+    background-color: rgb(246, 255, 237)
+  }
+  
+  .full-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .intro{
+    margin-top: 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    height: 150px;
+    width: 100%;
+  }
+
+  .intro-paragraph{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+
+  
+
+  .profile-pic{
+    margin-left: 100px;
+    width: 110px;
+  }
+
+  .title-text{
+    margin-left: 25px;
+    font-size: 50px;
+    font-family: "Capriola", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .container {
+    position : relative;
+    height: 500px;
+
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    flex-wrap : wrap;
+    flex-direction: row;
+    padding : 30px;
+  }
+  
+  .container .card {
+    position: relative;
+    text-decoration: none;
+    max-width : 350px;
+    height : 250px;  
+    background-color : #fff;
+    margin : 30px 30px;
+    padding : 20px 15px;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+    background-color: rgb(141, 180, 91, 80%);
+    border: 1px solid black;
+  }
+  .container .card:hover {
+    height : 350px;    
+  }
+  
+  
+  .container .card .image {
+    position : relative;
+    /* width : 260px;
+    height : 260px; */
+    
+    top : -40%;
+    left: 2px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .container .card .image img {
+    max-width : 100%;
+    border-radius : 15px 15px 0px 0px;
+  }
+  
+  .container .card .content {
+    position : relative;
+    top : -140px;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .container .card:hover .content {
+     margin-top : 30px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+/* CSS */
+.button {
+  text-decoration: none;
+  color: black;
+  margin-left: 500px;
+  font-size: 25px;
+  font-style: "Capriola";
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  border-radius: 10px;
+}
+
+.button:after {
+  text-decoration: none;
+  color: black;
+  content: "";
+  background-color: #ff006f81;
+  /* #ffe54c */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+
+  border-radius: 10px;
+}
+
+.button:hover:after {
+  text-decoration: none;
+  color: black;
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}

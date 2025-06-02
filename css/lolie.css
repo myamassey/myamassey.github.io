@@ -1,0 +1,164 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+
+body{
+    background-color: rgb(141, 180, 91, 70%);
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-family: "Capriola", sans-serif;
+}
+
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #main-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+
+
+    background-color: rgb(50, 37, 29);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 20px;
+    color:rgb(242, 210, 106);
+  }
+
+#main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    /* background-color: rgb(50, 37, 29);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 20px; */
+  }
+
+  .img-label{
+    max-width: 50%;
+    margin-right: 20px;
+  }
+
+  .img-gif{
+    max-width: 40%;
+    border-radius: 25px;
+    margin-left: 20px;
+  }
+
+  #text-box{
+    background-color: rgb(255, 181, 223);
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+
+    letter-spacing: 1px;
+    font-size: 18px;
+    /* font-family: "Capriola", sans-serif; */
+    font-style: normal;
+    font-weight: lighter;
+  }
+
+  #trailor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .video{
+    border-radius: 20px;
+    border: 1px solid black;
+  }
+
+  .download-container{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 315px;
+    width: 400px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container{
+    margin-left: 10px;
+    height: 315px;
+  }
+
+  .download-text{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* CSS */
+.button {
+  font-family: "Capriola", sans-serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 5px 20px 5px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  border-radius: 10px;
+  z-index: 1;
+
+  width: 150px;
+  margin-bottom: 25px;
+
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.button:after {
+  content: "";
+  background-color: rgba(255, 232, 103, 0.718);
+  /* #ffe54c */
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 13px 50px 13px;
+  }
+}

@@ -1,106 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Capriola&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
     <title>Mya Massey Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .download {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #ca71af;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .otherbutton {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #658d6a;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-        .project {
-            margin-bottom: 30px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
-        }
-    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mya Massey Portfolio</h1>
-        <h2>Projects</h2>
-        
-        <div class="project">
-            <h2>Lolie the Roly-Poly</h2>
-            <div><img src="lolie-roly-poly.gif"></div>
-            <a href="LolieTheRolyPoly_Windows.zip" class="download">Windows Download</a>
-            <a href="LolieTheRolyPoly_Mac.zip" class="download">Mac Download</a>
-            <a href="https://alicemartinez.itch.io/lolie" class="otherbutton">View trailor on itch.io</a>
-            
-            <p>Oh no! A river has separated Lolie the Roly-Poly from her family! Solve momentum-based puzzles, navigate underground, and collect leaves to help Lolie build a boat and make her way back home.</p>
-            <h4>Contributions</h4>
-            <span>
-            I developed the logic for Lolie's movement and interactions with the environment. I also helped design and implement levels.
-            </span>
-            
-            <h4>Technology Used</h4>
-            <ul>
-                <li>C#, Unity</li>
-            </ul>
-        </div>
 
-        <div class="project">
-            <h2>Orbit</h2>
-            <div><img src="orbit.gif" style="width:400px"></div>
-            <a href="https://myamassey.itch.io/orbit" class="download">Play on itch.io</a>
-            
-            <p>Jump orbits to take earth on a journey through the universe! </p>
-            <h4>Contributions</h4>
-            <ul>
-                <li>Worked on the core mechanics and design</li>
-                <li>Implemented UI and created most of the assets (sound from pixabay)</li>
-            </ul>
-            
-            <h4>Technology Used</h4>
-            <ul>
-                <li>C#, Unity</li>
-            </ul>
-        </div>
+    <div class="full-container">
 
-        <div class="project">
-            <h2>The Legend of Zelda Unity Remaster</h2>
-            <a href="ZeldaBuilds.zip" class="download">Download for Windows & Mac</a>
-            
-            <h4>Contributions</h4>
-            <ul>
-                <li>Weapons</li>
-                <li>Gel, Stalfos, and Goriya enemies</li>
-                <li>Player and custom level horse movement/transitions</li>
-                <li>Collaborated on overall game authenticity and custom level design</li>
-            </ul>
-            
-            <h4>Technology Used</h4>
-            <ul>
-                <li>C#, Unity</li>
-            </ul>
+      <div class="intro">
+          <img src="images/me-circle.png" class="profile-pic"/>
+          <h1 class="title-text">Mya Massey</h1>
+          <a href="downloads/myamassey-resume.pdf" class="button" role="button">Resume</a>
+      </div>
+      <p class="intro-paragraph">Hello! I graduated from the University of Michigan in spring 2025, and I'm currently on the job-hunt. I got my degree in Computer Science along with two minors: Physics and Astronomy & Astrophysics. Click on the icons below to play or learn more about the games I've worked on recently!  </p>
+
+    <div class = container>
+
+      <a href="html/lolie.html" class = card style="background-color: rgb(141, 180, 91, 70%)">
+        <div class = image>
+          <img href = "#" src ="images/lolie-square.png">
         </div>
-</body>
-</html>
+        <div class = content>
+          <h2>Lolie the Roly-Poly</h2>
+          <br />
+          <p>A river has separated Lolie from her family!
+            Solve puzzles and collect leaves to help her build a boat and make her way back home.</p>
+      </div> 
+      </a>
+      
+
+
+
+      <a href="html/orbit.html" class = card style="background-color: rgba(137, 36, 173, 0.7)">
+        <div class = image>
+          <img href = "#" src ="images/orbit.png">
+        </div>
+        <div class = content>
+          <h2>Orbit</h2>
+          <br />
+          <p>Take Earth on an adventure through the universe...but make sure to stay in the habitable zones!</p>
+      </div>       
+    </a>
+
+
+    <a href="html/zelda.html" class = card style="background-color: rgba(247, 142, 30, 0.762)">
+      <div class = image>
+        <img href = "#" src ="images/zelda.png">
+      </div>
+      <div class = content>
+        <h2>Legend of Zelda - Unity Remaster</h2>
+        <br />
+        <p>A recreation of the 1986 NES Zelda dungeon world, plus a bonus level.</p>
+    </div>       
+  </a>
+
+    </div>
+
+  </div> 
+
+
+  </body>
+  </html>
