@@ -14,7 +14,7 @@
     align-items : center;
     justify-content : center;  
     /* background-color: #43345d; */
-    min-height : 800px;
+    /* min-height : 800px; */
     background-color: rgb(246, 255, 237)
   }
   
@@ -23,6 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-wrap : wrap;
   }
 
   .intro{
@@ -33,11 +34,13 @@
     justify-content: left;
     height: 150px;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .intro-paragraph{
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 25px;
     font-size: 20px;
     margin-bottom: 50px;
   }
@@ -45,13 +48,15 @@
   
 
   .profile-pic{
-    margin-left: 100px;
+    margin-left: 7.5%;
     width: 110px;
   }
 
+  /* was 100px / 7.5% */
+
   .title-text{
     margin-left: 25px;
-    font-size: 50px;
+    font-size: 45px;
     font-family: "Capriola", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -64,8 +69,9 @@
     display : flex;
     align-items : center;
     justify-content : center;
-    flex-wrap : wrap;
     flex-direction: row;
+
+    flex-wrap : wrap;
     padding : 30px;
   }
   
@@ -75,7 +81,7 @@
     max-width : 350px;
     height : 250px;  
     background-color : #fff;
-    margin : 30px 30px;
+    margin : 30px 30px 50px 0px;
     padding : 20px 15px;
     
     display : flex;
@@ -129,9 +135,10 @@
 
 /* CSS */
 .button {
+  display: block;
   text-decoration: none;
   color: black;
-  margin-left: 500px;
+  margin-left: 33%;
   font-size: 25px;
   font-style: "Capriola";
   letter-spacing: 1px;
@@ -147,6 +154,8 @@
 
   border-radius: 10px;
 }
+
+/* was 500px */
 
 .button:after {
   text-decoration: none;
