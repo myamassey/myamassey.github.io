@@ -27,19 +27,25 @@
   }
 
   .intro{
+    width: 80%;
     margin-top: 75px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     height: 150px;
-    width: 100%;
     flex-wrap: wrap;
   }
 
+  .name-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .intro-paragraph{
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 80%;
     margin-top: 25px;
     font-size: 20px;
     margin-bottom: 50px;
@@ -48,7 +54,6 @@
   
 
   .profile-pic{
-    margin-left: 7.5%;
     width: 110px;
   }
 
@@ -135,10 +140,8 @@
 
 /* CSS */
 .button {
-  display: block;
   text-decoration: none;
   color: black;
-  margin-left: 33%;
   font-size: 25px;
   font-style: "Capriola";
   letter-spacing: 1px;
@@ -151,7 +154,6 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-
   border-radius: 10px;
 }
 
